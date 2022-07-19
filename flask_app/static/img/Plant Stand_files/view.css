@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	text-decoration: none;
+	font-family: 'Comfortaa', 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+:root {
+	--main: rgb(210,255,195); /* Light Green */
+	--sec: rgb(95,57,0); /* Brown */
+	--acc: rgb(132,90,26); /* Light Brown */
+	--acc2: rgba(132,90,26,0.42); /* transparent brown */
+	--acc3: rgb(78,45,0); /* dark brown */
+	--acc4: rgb(63,136,36); /* plant green */
+	--acc5: rgba(132,90,26,0.6); /* Dark Green */
+	--acc6: rgba(63,136,36, 0.2); /* plant green transparent */
+	--white: rgb(255,255,255);
+	--black: rgb(0,0,0);
+}
+
+.user-profile-container {
+	/*background-color: var(--main);*/
+	display: flex;
+	padding: 2% 7% 1% 7%;
+}
+
+.user-profile-avi {
+	height: 200px;
+	width: 200px;
+	margin-right: 7%;
+	border-radius: 180px;
+	border:  1px solid var(--acc2);
+	box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.user-profile-info {
+	background-color: var(--main);
+	border-radius: 10px;
+	padding: 1.5% 4% 1% 4%;
+	box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.profile-row {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 2%;
+}
+
+.profile-row > span {
+	width:  50%;
+}
+
+.profile-row > * {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+
+.users-profile-name {
+	padding-right: 50%;
+	font-size: 18px;
+}
+
+.users-profile-join {
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.profile-label {
+	padding-right: 1%;
+	display: inline;
+	font-weight: 900;
+}
+
+#b1 {
+	width: 6%;
+}
+
+#b2 {
+	width: 90%;
+}
+
+/* PLANT STAND SHOWCASE  *******************/
+.plant-stand-showcase {
+	margin: 0 7%;
+	padding-bottom: 1%;
+}
+
+.showcase {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 1% 0 1.5% 0;
+}
+
+.plant-stand-card {
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 21%;
+	font-size: 15px;
+	box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.plant-avi {
+	height: 180px;
+	width: 200px;
+	background-color: var(--acc2);
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 1%;
+}
+
+.plant-card-info {}
+
+.plant-name-card {
+	margin-bottom: 3%;
+}
+
+.routine {
+	font-weight: 300;
+}
+
+.plant-name-card > strong {
+	font-size: 15px;
+}
+
+.plant-learn-more {
+	padding: 6% 1% 0 1%;
+	font-size: 12px;
+	text-align: right;
+	text-decoration: underline;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.view-more-showcase {
+	text-align: right;
+	cursor: pointer;
+}
+
+/* VIEWING PERSONAL PROFILE  **********/
+.own-profile-info {
+	background-color: var(--main);
+	padding: 1.5% 3%;
+	margin: 20% 10% 10% 10%;
+	border-radius: 10px;
+	box-shadow: 0 0 6px 1px rgba(150, 150, 150, 0.2);
+}
+
+#thank-you {
+	margin: 0 10%;
+	background-color: var(--acc2);
+}
+
+
+
+
+
+
+
+
+
+

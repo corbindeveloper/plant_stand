@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='../static/css/main.css') }}">
+	<link rel="stylesheet" href="../static/css/main.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='../static/css/view.css') }}">
+	<link rel="stylesheet" href="../static/css/view.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,300&display=swap" rel="stylesheet">
+	<title>View Users Profile</title>
+</head>
+<body>
+	<div class="container">
+		<!-- TOP NAV -->
+		<div class="top-bar">
+			<div class="logo-container">
+				<h1 class="logo">PLANT STAND</h1>
+				<!-- LOGO IMAGE -->
+			</div>
+		</div>
+		<!-- BODY CONTENT -->
+		<div class="body-container">
+			<div class="user-profile-container">
+				<img src="/static/img/man2.png" class="user-profile-avi">
+				<div class="user-profile-info">
+					<div class="user-profile-table">
+						<div class="profile-row">
+							<div class="users-profile-name"><strong>Users Name Here</strong></div>
+							<div class="users-profile-join">Member Since: 06/29/2022</div>
+						</div>
+						<div class="profile-row">
+							<span><strong class="profile-label">State:</strong> Arizona</span>
+						</div>
+						<div class="profile-row">
+							<span><strong class="profile-label">Experience: </strong>Rookie</span>
+						</div>
+						<div class="profile-row">
+							<span><strong class="profile-label">Wishlist Plant:</strong> Monsterra</span>
+						</div>
+						<div class="profile-row">
+							<span id="b1"><strong class="profile-label">Bio:</strong></span>
+							<span id="b2">
+								Stimulate office sentient courier sign camera papier-mache vinyl. Pre-geodesic stimulate wonton soup city systema augmented reality uplink paranoid dead film warehouse. Systema dead vinyl order-flow soul-delay pistol shanty town j-pop. Bicycle tattoo face forwards tower sensory hotdog assassin stimulate corrupted.
+							</span>
+						</div>
+					</div>
+				</div>
+			</div> <!-- END USER PROFILE CONTAINER -->
+
+			<!-- USER PLANT STAND SHOWCASE -->
+			<div class="plant-stand-showcase">
+				<h1 class="showcase-title">Plants on Display</h1>
+				<div class="showcase">
+					<div class="plant-stand-card">
+						<img src="/static/img/plant.jpeg" class="plant-avi">
+						<div class="plant-card-info">
+							<p class="plant-name-card"><strong>Plant Name:</strong> Monsterra</p>
+							<p class="plant-name-card routine"><strong>Length of Ownership:</strong><br>1 year, 120 days</p>
+							<p class="plant-learn-more"><a>Learn More</a></p>
+						</div>
+					</div>
+
+					<div class="plant-stand-card">
+						<img src="/static/img/plant.jpeg" class="plant-avi">
+						<div class="plant-card-info">
+							<p class="plant-name-card"><strong>Plant Name:</strong> Monsterra</p>
+							<p class="plant-name-card routine"><strong>Length of Ownership:</strong><br>1 year, 120 days </p>
+							<p class="plant-learn-more"><a>Learn More</a></p>
+						</div>
+					</div>
+
+					<div class="plant-stand-card">
+						<img src="/static/img/plant.jpeg" class="plant-avi">
+						<div class="plant-card-info">
+							<p class="plant-name-card"><strong>Plant Name:</strong> Monsterra</p>
+							<p class="plant-name-card routine"><strong>Length of Ownership:</strong><br>1 year, 120 days </p>
+							<p class="plant-learn-more"><a>Learn More</a></p>
+						</div>
+					</div>
+
+					<div class="plant-stand-card">
+						<img src="/static/img/plant.jpeg" class="plant-avi">
+						<div class="plant-card-info">
+							<p class="plant-name-card"><strong>Plant Name:</strong> Monsterra</p>
+							<p class="plant-name-card routine"><strong>Length of Ownership:</strong><br>1 year, 120 days</p>
+							<p class="plant-learn-more"><a>Learn More</a></p>
+						</div>
+					</div>
+				</div>
+				<p class="view-more-showcase"><a href="/plantstand/view/all">View All</a></p>
+			</div>
+
+			<!-- FOOTER -->
+			<div class="footer">
+				<span>&copy; 2022 </span> | All rights reserved. | Developed by Corbin Crawford
+			</div>
+		</div>
+	</div>
+
+	<!-- RIGHT COLUMN -->
+	<div class="right-column">
+		<div class="top-btn-container">
+			<a href="/dashboard" class="logout-btn left">Dashboard</a>
+			<a href="/logout" class="logout-btn">Logout</a>
+		</div>
+		<img src="/static/img/man.png" class="user-avi">
+
+	<!-- YOUR LINKS -->
+		<div class="your-links">
+			<p class="users-name">User Name Here</p>
+			<a class="your-link" href="/profile/view">Your Profile</a>
+			<a class="your-link" href="/plantstand/view">Your Showcase</a>
+		</div>
+
+		<div class="user-info-container">
+			<!-- YOUR STATS -->
+			<div class="stat-card total-plants">
+				YOUR TOTAL PLANTS: #
+			</div>
+			<div class="stat-card recent-new">
+				NEWEST: Plant Name
+			</div>
+			<div class="stat-card wishlist">
+				WISHLIST: Plant Name
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='../static/css/main.css') }}">
+	<link rel="stylesheet" href="../static/css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,300&display=swap" rel="stylesheet">
+	<title>Plant Stand</title>
+</head>
+<body>
+	<div class="container">
+		<!-- TOP NAV -->
+		<div class="top-bar">
+			<div class="logo-container">
+				<h1 class="logo">PLANT STAND</h1>
+				<!-- LOGO IMAGE -->
+			</div>
+		</div>
+		<!-- BODY CONTENT -->
+		<div class="body-container">
+			<div class="spotlight-container">
+				<p class="card-title">Our Spotlight</p>
+				<div class="spotlight">
+					<p>This is the spotlight</p>
+					<p>This is the spotlight</p>
+					<p>This is the spotlight</p>
+				</div>
+			</div>
+
+			<div class="board-container">
+				<!-- COMMUNITY BOARD -->
+				<div class="card-container">
+					<div class="comm-title-btn">
+						<p class="card-title lower-title">Communities</p>
+						<a href="/community/view/all" class="view-all-comm">View All</a>
+						<a href="/community/create" class="view-all-comm">Create</a>
+					</div>
+
+					<div class="community-board inner-board">
+						<p>Rookie Club</p>
+						<div class="comm-join-view-btn">
+							<a href="community/view" class="join-com-btn join-right"><span>View</span></a>
+							<a href="#JOIN" class="join-com-btn"><span>Join!</span></a>	
+						</div>
+					</div>
+
+					<div class="community-board inner-board">
+						<p>Arizona Plant Lovers</p>
+						<div class="comm-join-view-btn">
+							<a href="community/view" class="join-com-btn join-right"><span>View</span></a>
+							<a href="#JOIN" class="join-com-btn"><span>Join!</span></a>	
+						</div>
+					</div>
+
+					<div class="community-board inner-board">
+						<p>Cactus Crew</p>
+						<div class="comm-join-view-btn">
+							<a href="community/view" class="join-com-btn join-right"><span>View</span></a>
+							<a href="#JOIN" class="join-com-btn"><span>Join!</span></a>	
+						</div>
+					</div>
+
+					<div class="community-board inner-board">
+						<p>Monstera Moms</p>
+						<div class="comm-join-view-btn">
+							<a href="community/view" class="join-com-btn join-right"><span>View</span></a>
+							<a href="#JOIN" class="join-com-btn"><span>Join!</span></a>	
+						</div>
+					</div>
+
+					<div class="community-board inner-board">
+						<p>Garden Gang</p>
+						<div class="comm-join-view-btn">
+							<a href="community/view" class="join-com-btn join-right"><span>View</span></a>
+							<a href="#JOIN" class="join-com-btn"><span>Join!</span></a>	
+						</div>
+					</div>
+				</div>
+
+				<!-- FORUM BOARD -->
+				<div class="card-container">
+					<p class="card-title lower-title">Forums</p>
+					<div class="forum-board inner-board">
+						<table>
+							<thead>
+								<tr>
+									<th class="t1">TOPIC</th>
+									<th class="t2"># POSTS</th>
+									<th class="t3">ACTIVITY</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="forum-card">
+									<td class="t1 td1">App News & Updates</td>
+									<td class="t2 td2">1</td>
+									<td class="t3 td3">06/18/22</td>
+								</tr>
+
+								<tr class="forum-card">
+									<td class="t1 td1">Plant Tips & Tricks</td>
+									<td class="t2 td2">5</td>
+									<td class="t3 td3">06/18/22</td>
+								</tr>
+
+								<tr class="forum-card">
+									<td class="t1 td1">Plant Health Help!</td>
+									<td class="t2 td2">8</td>
+									<td class="t3 td3">06/18/22</td>
+								</tr>
+
+								<tr class="forum-card">
+									<td class="t1 td1">Plant Identifying</td>
+									<td class="t2 td2">8</td>
+									<td class="t3 td3">06/18/22</td>
+								</tr>
+							</tbody>
+						</table>
+						
+					</div>
+				</div>
+
+			</div>
+			<div class="footer">
+				<span>&copy; 2022 </span> | All rights reserved. | Developed by Corbin Crawford
+			</div>
+		</div>
+	</div>
+
+	<!-- RIGHT COLUMN -->
+	<div class="right-column">
+		<a href="/user/logout" class="logout-btn">Logout</a>
+		<img src="/static/img/man.png" class="user-avi">
+
+	<!-- YOUR LINKS -->
+		<div class="your-links">
+			<p class="users-name">{{ session['first_name'] }} {{ session['last_name'] }}</p>
+			<a class="your-link" href="/profile/view">Your Profile</a>
+			<a class="your-link" href="/plantstand/view">Your Stand Display</a>
+		</div>
+
+		<div class="user-info-container">
+			<!-- YOUR STATS -->
+			<div class="stat-card total-plants">
+				YOUR TOTAL PLANTS: #
+			</div>
+			<div class="stat-card recent-new">
+				NEWEST: Plant Name
+			</div>
+			<div class="stat-card wishlist">
+				WISHLIST: Plant Name
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

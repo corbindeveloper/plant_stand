@@ -1,0 +1,10 @@
+- [X] Edit Personal Profile
+- [ ] Add Plants
+- [ ] Display plant on users profile
+- [ ] Display plant on view all plants
+- [ ] Create a community
+- [ ] View All Communities
+- [ ] Join communities 
+- [ ] View Communities
+- [ ] View Others Profile
+- [ ] Learn More on plant card

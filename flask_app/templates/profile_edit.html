@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='../static/css/create.css') }}">
+	<link rel="stylesheet" href="../static/css/create.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,300&display=swap" rel="stylesheet">
+	<title>Edit Profile</title>
+</head>
+<body>
+	<div class="container">
+		<!-- TOP NAV ------------------->
+		<div class="top-bar">
+			<div class="logo-container">
+				<h1 class="logo">PLANT STAND</h1>
+				<!-- LOGO IMAGE -->
+			</div>
+		</div>
+
+		<!-- BODY CONTENT ------------------->
+		<div class="body-container" id="body-100">
+			<div class="create-form-container">
+				<div class="create-profile-box">
+					<div class="upload-image-container">
+						<h1 class="title">Edit Your Profile</h1>
+						<img src="/static/img/user.png" class="profile-image">
+						<form action="/" method="post" class="image-upload">
+								<label for="image-upload">Upload Image:</label>
+								<input type="text" name="image-upload" id="image-upload">
+						</form>
+					</div>
+
+					<div class="form-to-create">
+						<form action="/" method="post">
+							<label for="bio">Your Bio:</label>
+							<textarea type="text" name="bio" id="bio"  rows=4 value="{{ user.bio }}">{{ user.bio }}</textarea>
+
+							<label for="exp">Your Experience:</label>
+							<select value="exp">
+								<option> Rookie</option>
+								<option> Amatuer</option>
+								<option> Confident</option>
+								<option> Green Thumb</option>
+							</select>
+
+							<label for="state">Your State:</label>
+							<input type="text" name="state" id="state" value="{{ user.state }}">
+
+							<label for="wishlist">Your Wishlist Plant:</label>
+							<input type="text" name="wishlist" id="wishlist" value="{{ user.wishlist }}">
+
+							<button>Update Your Profile</button>
+						</form>
+					</div>
+				</div>
+			</div> 
+
+
+			<div class="footer">
+				<span>&copy; 2022 </span> | All rights reserved. | Developed by Corbin Crawford
+			</div>
+		</div>
+	</div>
+
+	<!-- RIGHT COLUMN ------------------->
+	<!-- <div class="right-column">
+		<a href="#LOGOUT" class="logout-btn">Logout</a>
+	</div> -->
+</body>
+</html>
